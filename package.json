@@ -1,6 +1,6 @@
 {
   "name": "practice-commits",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -29,11 +29,11 @@
     },
     "plugins": {
       "@release-it/conventional-changelog": {
-      "preset": {
-       "name": "angular"
-      },
-      "infile": "CHANGELOG.md"
-  }
-}
+        "preset": {
+          "name": "angular"
+        },
+        "infile": "CHANGELOG.md"
+      }
+    }
   }
 }
