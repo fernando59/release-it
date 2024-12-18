@@ -24,9 +24,6 @@
     "git": {
       "commitMessage": "chore: release v${version}"
     },
-    "gitlab": {
-      "release": true
-    },
     "github": {
       "release": true
     },
