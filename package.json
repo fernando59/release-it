@@ -14,6 +14,7 @@
     "release-please": "^16.15.0"
   },
   "devDependencies": {
+    "@release-it/conventional-changelog": "^9.0.3",
     "release-it": "^17.10.0"
   },
   "release-it": {
@@ -28,6 +29,14 @@
     },
     "github": {
       "release": true
-    }
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+      "preset": {
+       "name": "angular"
+      },
+      "infile": "CHANGELOG.md"
+  }
+}
   }
 }
