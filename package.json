@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "release-it"
   },
   "keywords": [],
   "author": "",
@@ -11,5 +12,19 @@
   "description": "",
   "dependencies": {
     "release-please": "^16.15.0"
+  },
+  "devDependencies": {
+    "release-it": "^17.10.0"
+  },
+  "release-it": {
+    "npm": {
+      "publish": false
+    },
+    "git": {
+      "commitMessage": "chore: release v${version}"
+    },
+    "gitlab": {
+      "release": true
+    }
   }
 }
